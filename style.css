@@ -1,0 +1,77 @@
+.bottom-three {
+    margin-bottom: 3cm;
+}
+
+/* eliminate horizontal scrollbar on mobile devices */
+.row{
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+
+/* Bootstrap 3 doesnt have padding & margin setting so I set it manually */
+.mb-5 {
+    padding-bottom: 24px;
+}
+.mb-6 {
+    padding-bottom: 32px;
+}
+.mt-6 {
+    padding-top: 32px;
+}   
+.mb-7 {
+    padding-bottom: 48px;
+}
+.mt-7 {
+    padding-top: 48px;
+}
+
+/* unify icon size */
+img.icon {
+    height: 56px;
+    width: auto;
+    padding-right: 8px;
+    padding-bottom: 16px;
+}
+
+/* unify list item style */
+li {
+    font-size: 16px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+/* set mailto link */
+a.mailto {
+    font-weight: bold;
+    color: black;
+}
+a.mailto:hover{
+    color: rgba(0, 0, 0, 50%)
+}
+
+/* centering items when screen width is less than 992px*/
+@media (max-width: 992px) {
+    .portrait-card {
+        text-align: center;
+    }
+    .portrait-card img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .portrait-card table {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+/* big-font class prevent the font size to be excessive on a small screen (width less than 576px)*/
+.big-font {
+    font-size: 20px;
+}
+
+@media (max-width: 576px) {
+    .big-font {
+        font-size: 16px;
+    }
+}
