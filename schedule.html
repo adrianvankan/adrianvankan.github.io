@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<!--
+    Plain-Academic by Vasilios Mavroudis
+-->
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Oswald:700" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="style.css">
+  <title>Workshop Schedule</title>
+
+  <style>
+    /* A readable PDF window */
+    .pdf-wrap{
+      margin-top: 12px;
+    }
+    .pdf-frame{
+      width: 100%;
+      height: calc(100vh - 220px);  /* fill most of the screen */
+      min-height: 700px;            /* readable on desktops */
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      background: #fff;
+    }
+    @media (max-width: 768px){
+      .pdf-frame{
+        height: 80vh;
+        min-height: 520px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<nav>
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li><a href="index.html"><h3>Home</h3></a></li>
+        <li class="active"><a href="schedule.html"><h3>Workshop</h3></a></li>
+        <li><a href="index.html#projects"><h3>Projects</h3></a></li>
+        <li><a href="index.html#pubs"><h3>Publications</h3></a></li>
+        <li><a href="index.html#cv"><h3>CV</h3></a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+
+      <h2 style="font-family: 'Oswald', sans-serif; margin-top: 10px;">
+        TAMU Workshop Schedule
+      </h2>
+
+      <p class="big-font">
+        View the program below, or open it in a new tab:
+        <a href="schedule_TAMU_workshop.pdf" target="_blank"><b>schedule_TAMU_workshop.pdf</b></a>.
+      </p>
+
+      <div class="pdf-wrap">
+        <iframe class="pdf-frame" src="schedule_TAMU_workshop.pdf"></iframe>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+</body>
+</html>
